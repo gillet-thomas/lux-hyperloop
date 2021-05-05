@@ -67,7 +67,7 @@ public class Station {
 						passengers.add(new Passenger(g, id, Launcher.amountOfStations));
 					}
 					// Uncomment the following line to see how many Passengers have spawned.
-					System.out.println("Spawned: " + passengerAmount + " at station " + this.id);
+					// System.out.println("Spawned: " + passengerAmount + " at station " + this.id);
 				}
 				try {
 					Thread.sleep(5000);
