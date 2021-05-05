@@ -1,17 +1,17 @@
 # Luxembourg Hyperloop
-This program represent a real-time visualization of the Hyperloop system that could be implemented in Luxembourg.  
+This program represents a real-time visualization of the Hyperloop system that could be implemented in Luxembourg.  
 Passengers travel from one station to another using pods that are sent through tubes.
 Each station can be connected to another one by a single or bidirectional tube. An annotated version of the map used in the program can be found in `src/main/resources/`.
 
 ## Features
-When the program is first started, all stations have a defined number of passengers. Passengers are attached a random station destination.  
+When the program is first started, all stations have a defined number of passengers. Passengers are given a random station destination.  
 
-Each passenger will compute his shortest path using Dijkstra's algorithm. It means that every passenger will exactly know which stations he has to go through in order to get as fast as possible to his final destination. When a passenger arrives to a station, if this station is his final destination, then the passenger will disapear from the program. Otherwise, he will wait for a pod going to the next station in his shortest path. He will do that until he reaches his final destination.
+Each passenger will compute his shortest path using Dijkstra's algorithm. It means that every passenger will exactly know which stations he has to go through in order to get as fast as possible to his final destination. When a passenger arrives at a station, if this station is his final destination, then the passenger will disappear from the program. Otherwise, he will wait for a pod going to the next station in his shortest path. He will do that until he reaches his final destination.
 
-Since passengers disappear from the program once they arrive at their final destination, there is a passenger spawning system implemented. Every 2 seconds, passengers will spawn in each station with a 25% chance. The number of spawned passengers is again random and lies between 0 and 5.   
+Since passengers disappear from the program once they arrive at their final destination, there is a passenger spawning system implemented. Every 5 seconds, passengers will spawn in each station with a 15% chance. The number of spawned passengers is again random and lies between 1 and 5.   
 
 Pods are sent from a station to another either if they are fully boarded (4 passengers) or after a specific amount of time (4 seconds). Pods can't be sent empty.
-The ride duration of a pod is relative to the distance travelled in the tube. Only one pod can travel in a tube at the same time.  
+The ride duration of a pod is relative to the distance traveled in the tube. Only one pod can travel in a tube at the same time.  
 
 This program makes great use of threads in order to schedule the sending of pods, spawn passengers, handle concurrent sending of pods through tubes,...  
 
@@ -23,5 +23,5 @@ Once the program is running, an output on the right will describe the actions pe
 Those actions are replicated in real-time on the map on the left.  
 
 ## Collaborators
-This Project was done for the Software Engineering Project course at the University of Luxembourg.  
-The three other collaborators are Rayan Rafdy, Hugo Cossa and Gilles Chen.  
+This project was done for the Software Engineering Project course at the University of Luxembourg.  
+The three other collaborators are Rayan Rafdy, Hugo Cossa, and Gilles Chen.  
