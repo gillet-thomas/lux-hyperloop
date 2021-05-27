@@ -23,5 +23,5 @@ Once the program is running, an output on the right will describe the actions pe
 Those actions are replicated in real-time on the map on the left.  
 
 ## Collaborators
-This project was done for the Software Engineering Project course at the University of Luxembourg.  
+This project was done for the Algorithms 3 course at the University of Luxembourg.  
 The three other collaborators are Rayan Rafdy, Hugo Cossa, and Gilles Chen.  
